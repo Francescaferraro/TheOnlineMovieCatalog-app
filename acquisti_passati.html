@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head lang="it">
+    <meta charset="UTF-8">
+    <title>TOMC</title>
+    <link href="tomc.css" rel="stylesheet"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <script src="tomc.js"></script>
+</head>
+<body style="background-color: #aec2d1" onload="storico()">
+    <br>
+    <center><p id="title"><b>The Online Movie Catalog</b></p></center>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" style="color:#dadee0"><b>Area Personale</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+         <a class="nav-link" href="clienti.html" style="color:#dadee0">Scegli film</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="carrello.html" style="color:#dadee0">Carrello</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="film_disponibili.html" style="color:#dadee0">Film disponibili</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="acquisti_passati.html" style="color:#dadee0; background-color: #4b6980">Acquisti passati</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dati_clienti.html" style="color:#dadee0">I tuoi dati</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#" style="color:#dadee0" onclick="logout('area_clienti.html')">Logout</a>
+        </li>
+        </ul>
+      
+      </div>
+    </nav>
+    <br>
+    <center>
+       <br>
+      <h3>Film acquistati in passato</h3>
+      <h6><a href="recensioni_clienti.html" style="color: #454444;">Lascia una valutazione ai negozianti</a></h6>
+      <div id="carrello">
+       
+        <br>
+        <br>
+   
+      </div>
+      <br>
+    </center>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

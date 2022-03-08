@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head lang="it">
+    <meta charset="UTF-8">
+    <title>TOMC</title>
+    <link href="tomc.css" rel="stylesheet"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="icon" type="image/x-icon" href="fav.png">
+    <script src="tomc.js"></script>
+   
+</head>
+<body style="background-color: #aec2d1"  onload="show()">
+    <br>
+    <center><p id="title"><b>The Online Movie Catalog</b></p></center>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" style="color:#dadee0"><b>Area Personale</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+         <a class="nav-link" href="clienti.html" style="color:#dadee0">Scegli film</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="carrello.html" style="color:#dadee0">Carrello</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="film_disponibili.html" style="color:#dadee0">Film disponibili</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="acquisti_passati.html" style="color:#dadee0">Acquisti passati</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dati_clienti.html" style="color:#dadee0; background-color: #4b6980">I tuoi dati</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#" style="color:#dadee0" onclick="logout('area_clienti.html')">Logout</a>
+        </li>
+        </ul>
+      
+      </div>
+    </nav>
+
+    <div>
+       <center>
+      <form class="formlogin" name="invio" method="post">
+        <br>
+      <div id="intestazione"><label><b>Modifica i tuoi dati</b></label></div><br>
+     <div id="login"><div id="titolologin"><label><b>Dati personali</b></label></div>
+      
+      <label for = "nome">Nome:</label>
+      <input type="text" name="nome" id="nome" required/><br>
+      <label for = "cognome">Cognome:</label>
+      <input type="text" name="cognome" id="cognome" required/><br>
+      <label for="nascita">Data di nascita:</label><br>
+      <input type="date" name="nascita" id="nascita" required/><br>
+      <br>
+    </div>
+    <br>
+    <div id="login"><div id="titolologin"><label><b>Tipo di account</b></label></div>
+      
+      <input type="radio" name="tipo_account" value="singolo" checked>
+      <label for="singolo">Singolo <i>(accesso da un solo dispositivo)</i></label><br>
+      <input type="radio" name="tipo_account" value="familiare">
+      <label for="familiare">Familiare <i>(accesso da due a sei dispositivi)</i></label><br>
+    <br>
+    </div>
+    <br>
+    <div id="login"><div id="titolologin"><label><b>Informazioni pagamento</b></label></div>
+     
+      <label for="pagamento">Tipo di pagamento:</label>
+      <select name="pagamento" id="pagamento">
+      <option value="carta_credito">Carta di credito</option>
+      <option value="carta_prepagata">Carta prepagata</option>
+      <option value="paypal">PayPal</option>
+      </select>
+    <br>
+    </div>
+    <br>
+    <div id="login"><div id="titolologin"><label><b>Trattamento dati personali</b></label></div>
+      
+      
+      <input type="checkbox" name="privacy" value="accetta" checked>
+      <label for="accetta">Accetto l'<a href="trattamento.pdf" target="_blank">informativa privacy</a></label><br><br>
+      <input type="checkbox" name="mktg" value="accetta_m">
+      <label for="accetta_m">Acconsento al trattamento per <a href="marketing.pdf" target="_blank">finalità di marketing</a></label><br><br>
+     
+    </div>
+    <br>
+    <div id="login"><div id="titolologin"><label><b>Account</b></label></div>
+      
+      
+    <label for = "telefono">Telefono:</label>
+    <input type="text" name="telefono" id="telefono" required>
+    <label for = "email">Email:</label>
+    <input type="text" name="email" id="email" required>
+    <label for = "password">Password:</label>
+    <p><i>(deve contenere almeno 6 caratteri)</i></p>
+    <input type="password" name="password" id="password" required>
+    <label for = "conferma">Conferma password:</label>
+    <input type="password" name="conferma" id="conferma" required>
+    <br>
+    </div>
+    <br>
+    <input type="submit" class="button" value="Salva" onClick="modifica()"/><br><br>
+
+    </form>
+    </center>
+    </div>
+    <center>
+    <p>oppure</p>
+    <br>
+    <input type="submit" class="button" id="cancella" value="Cancella Account" onClick="cancella('utenteAttuale', 'info', 'area_clienti.html')"/><br>
+    <br>
+    <br>
+    </center>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

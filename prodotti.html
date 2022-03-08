@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="it">
+    <meta charset="UTF-8">
+    <title>TOMC</title>
+    <link href="tomc.css" rel="stylesheet"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="icon" type="image/x-icon" href="fav.png">
+    <script src="tomc.js"></script>
+</head>
+<body style="background-color: #aec2d1" onload="catalogo()">
+    <br>
+    <center><p id="title"><b>The Online Movie Catalog</b></p></center>
+    <br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" style="color:#dadee0"><b>Area Personale</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+         <a class="nav-link" href="prodotti.html" style="color:#dadee0; background-color: #4b6980">Prodotti</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="recensioni.html" style="color:#dadee0">Recensioni</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dati_negozianti.html" style="color:#dadee0">I tuoi dati</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:#dadee0" onclick="logout('area_negozianti.html')">Logout</a>
+        </li>
+        </ul>
+      
+      </div>
+    </nav>
+
+
+    <center><br>
+      <div class="card" style="width: 40rem;">
+      <div class="card-body" style="background-color: #fff">
+        <h5 class="card-title" style="color: #333">Aggiungi film al tuo catalogo</h5>
+        <p class="card-text" style="color: #333">Ricerca i film disponibili tramite id o titolo per aggiungerli o modificarli.</p>
+      <a href="prodotti_ricerca.html" class="btn btn-dark" style="background-color: #333">Vai</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <input type="button" class="btn btn-outline-dark" id="prev" style="display: none; float: right; position: absolute; left: 220px;" value="Prev"></input>
+    <input type="button" class="btn btn-outline-dark" id="click" style="display: none; float: right; position: absolute; right: 220px;" value="Next"></input>
+       <div id="risultato" style="width: 420px"> </div>
+          <div class="card" id="card" style="width: 18rem; display: none;">
+          <img class="card-img-top" id="locandina">
+          <div class="card-body">
+          <p class="card-text" id="description"></p>
+          <textarea id='descrizione_cambiata' style='width: 15rem; display: none'></textarea>
+          </div>
+        </div>
+          <br>
+          <input type="button" class="btn btn-light" id="button" style="display: none;" value="Modifica Descrizione"></input>
+          <br>
+          <p style="display: none;" id="oppure">oppure</p>
+          <br>
+          <input type="button" class="btn btn-dark" id="cancella" style="display: none;" value="Cancella"></input>
+    <br>
+    <br>
+    </center>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
