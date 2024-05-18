@@ -1,39 +1,7 @@
 # TheOnlineMovieCatalog-app
-applicazione web realizzata per l'esame universitario di Applicazioni Web e Cloud - data di realizzazione: Dicembre 2021
+Web application developed for the university exam in Web Applications and Cloud - Date of Completion: December 2021
 
 
-# Requisiti
+# Requirements
 
-Il progetto si pone l’obiettivo di sviluppare l’applicazione web The Online Movie Catalog che implementa un sito di gestione catalogo e
-ordinazione di film online. The Online Movie Catalog gestisce il processo di organizzazione dei palinsesti cinematografici di pi`u negozi online
-e l’ordinazione dei film all’interno di un portale online di videostreaming.
-E composto di due macro-scenari principali: `
-– gestione del palinsesto
-– gestione degli ordini.
-Esistono due tipologie di utenti: negoziante e cliente. Di seguito sono
-analizzate in dettaglio le caratteristiche dei due macro-scenari introdotti.
-Il primo macro-scenario (gestione del palinsesto) consiste nella gestione dei film dalla pubblicazione del catalogo alla vendita. Gli utenti
-negozianti devono potersi collegare all’applicazione, modificare i propri
-dati/preferenze e cancellarsi. Per ogni negoziante si dovranno gestire informazioni quali nome del negozio, numero di telefono, partita iva, indirizzo, recensioni, etc. Un negoziante, una volta registrato, pu`o collegarsi
-all’applicazione e inserire i prodotti in vendita selezionandoli da una lista
-comune a tutti i negozianti. Questa lista `e da acquisire tramite il portale
-The Movie DB (https://www.themoviedb.org/ tramite l’accesso API con la metodologia REST). Per ogni prodotto (film) in vendita dovranno
-essere gestite le informazioni principali quali titolo, attori, regista, genere
-e anno di pubblicazione, inoltre dovr`a essere presente una foto illustrativa (locandina) il cui riferimento `e sempre reperibile tramite API.
-Un venditore, successivamente, pu`o collegarsi all’applicazione e modificare/cancellare prodotti esistenti di cui `e responsabile.
-Il secondo scenario (gestione degli ordini) consiste nella classica gestione delle attivit`a dei clienti all’interno di un’applicazione di ordini online. I clienti devono potersi registrare, modificare i propri dati/preferenze,
-cancellarsi. Per ogni utente si devono memorizzare informazioni personali
-(ad es., nome, cognome) e informazioni relative all’account generato. Al
-cliente vengono anche associate informazioni riguardanti il meccanismo
-di pagamento dei prodotti (ad es., carta di credito o carta prepagata). Inoltre, in fase di registrazione gli utenti possono selezionare delle preferenze
-(tra le quali quelle di privacy e relative all’applicazione) per la personalizzazione dei servizi (ad es., offerte speciali in bacheca per la tipologia di
-genere preferito). In questo scenario, gli utenti registrati (min 2) possono
-fare login al sito, selezionare un film di interesse, aggiungerlo al carrello
-e concludere il pagamento dei film nel carrello.
-Al momento del pagamento dell’ordine l’utente pu`o essere decidere
-tra due modalit`a:
-– acquisto perpetuo: il film acquisito sar`a sempre disponibile tra i film
-disponibili per la visione del cliente;
-– noleggio: il film pagato dal cliente sar`a disponibile nel film visibili dal
-cliente solo per 72h dal giorno dell’acquisto; successivamente, rimarr`a
-in elenco ma sar`a indicato come non disponibile per la visione.
+The project aims to develop the web application "The Online Movie Catalog," which implements a catalog and ordering system for online movies. The Online Movie Catalog manages the process of organizing movie schedules for multiple online stores and ordering movies within an online video streaming portal. It consists of two main macro-scenarios: - Schedule management - Order management. There are two types of users: shopkeepers and customers. Below are the detailed characteristics of the two introduced macro-scenarios. The first macro-scenario (schedule management) consists of managing movies from catalog publication to sale. Shopkeeper users should be able to connect to the application, modify their data/preferences, and delete themselves. For each shopkeeper, information such as store name, phone number, VAT number, address, reviews, etc., must be managed. Once registered, a shopkeeper can connect to the application and list products for sale by selecting them from a list common to all shopkeepers. This list is to be acquired via The Movie DB portal (https://www.themoviedb.org/) using the REST API access methodology. For each product (movie) for sale, main information such as title, actors, director, genre, and release year must be managed, and there should also be an illustrative photo (poster) whose reference is always available via API. A seller can subsequently connect to the application and modify/delete existing products for which they are responsible. The second scenario (order management) consists of the classic management of customer activities within an online ordering application. Customers should be able to register, modify their data/preferences, and delete themselves. For each user, personal information (e.g., name, surname) and information related to the generated account must be stored. Customers are also associated with information regarding the payment mechanism for products (e.g., credit card or prepaid card). Furthermore, during registration, users can select preferences (including privacy and application-related preferences) for service customization (e.g., special offers on the board for the preferred genre). In this scenario, registered users (minimum 2) can log in to the site, select a movie of interest, add it to the cart, and complete the payment for the movies in the cart. At the time of order payment, the user can choose between two modes: - Perpetual purchase: the purchased movie will always be available among the movies available for the customer's viewing; - Rental: the movie paid for by the customer will be available in the customer's viewable movies for only 72 hours from the day of purchase; thereafter, it will remain in the list but will be indicated as not available for viewing.
